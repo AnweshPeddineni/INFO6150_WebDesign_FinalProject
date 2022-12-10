@@ -1,2 +1,2 @@
-# INFO6150_WebDesign_FinalProject
+# INFO6150_WebDesign_FinalProject_Client
 Levnance

@@ -1,0 +1,108 @@
+@import '../../Styles/_variables.scss';
+@import '../../Styles/_mixins.scss';
+
+
+.events-container{
+    background-color: $primary-beige-light;
+    padding-bottom: 10px;
+    height: 100%;
+
+    .not-result {
+        color: $primary-brown;
+        font-family: "SemiBold";
+        height: 100vh;
+    }
+
+    .event-title {
+        color: $primary-brown;
+        margin: 0;
+        padding: 40px 0 20px 0;
+    }
+    
+    .card-wrapper {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      display: flex;
+      padding: 20px;
+      margin: 60px;
+      cursor: pointer;
+      background-color: $primary-brown;
+      color: $primary-beige-light;
+      border-radius: 10px;
+
+      .left-part {
+          margin-right: 30px;
+        img {
+            width: 300px;
+            height: 200px;
+        }
+      }
+
+      .right-part {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+
+          .card-title {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              h2 {
+                color: $primary-red;
+              }
+              div {
+                color: $primary-red;
+                font-family: "SemiBold";
+
+              }
+          }
+
+          span {
+            font-family: "Regular";
+          }
+
+          .right-bottom {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+
+              a {
+                  text-decoration: none;
+                  font-family: "Regular";
+                  color: $primary-red;
+                  cursor: pointer;
+              }
+
+              .event-button {
+                @include redButton();
+                margin-right: 10px;
+                color: $primary-beige-light;
+                font-family: "Regular";
+              }
+          }
+
+          .info {
+            height: 60px;
+            text-align: left;
+          }
+          
+          p {
+              text-align: left;
+          }
+
+          h2 {
+            text-decoration: none;
+            color: $white;
+            margin: 0 0 5px 0;
+          }
+      }
+    }
+}
+
+.event-search-wrapper {
+  padding: 0 10px;
+    .event-text-field {
+        width: 100%;
+    }
+}
